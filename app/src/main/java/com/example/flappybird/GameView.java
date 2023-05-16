@@ -72,8 +72,8 @@ public class GameView extends View {
     }
 
     private void initPipe() {
-        sumPipe=6;
-        distance=300*Constants.SCREEN_HEIGHT/2400;
+        sumPipe=4;
+        distance=400*Constants.SCREEN_HEIGHT/2400;
         arrPipes = new ArrayList<>();
         for(int i =0 ;i<sumPipe;i++){
             if(i<sumPipe/2){

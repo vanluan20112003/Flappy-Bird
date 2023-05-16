@@ -32,13 +32,14 @@ public class MainActivity extends AppCompatActivity {
         rl_game_over=findViewById(R.id.rl_game_over);
         btn_start=findViewById(R.id.btnStart);
         gv=findViewById(R.id.gv);
+        rl_game_over.setVisibility(View.INVISIBLE);
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gv.setStart(true);
                 txt_Score.setVisibility(View.VISIBLE);
                 btn_start.setVisibility(View.INVISIBLE);
-                //rl_game_over.setVisibility(View.INVISIBLE);
+                rl_game_over.setVisibility(View.INVISIBLE);
                //txt_game_over.setVisibility(View.INVISIBLE);
 //                txt_score_over.setVisibility(View.INVISIBLE);
             }
